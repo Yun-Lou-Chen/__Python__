@@ -2,7 +2,7 @@
 from machine                import Pin,PWM
 import time
  
-pwm = PWM(Pin(17))
+pwm = PWM(Pin(16))
  
 pwm.freq(1000)
  

@@ -20,7 +20,7 @@ mac = ubinascii.hexlify(network.WLAN().config('mac'),':').decode()
 print('Pico W MAC地址=' + mac)   # 顯示Pico W開發板十六進制MAC地址
 
 # ssid = 'Home_CCS&Lou'    # 設定WiFi名稱 (ssid: service set identifier)
-ssid = 'f28203416f'    # 設定WiFi名稱 (ssid: service set identifier)
+ssid = 'YunLou'    # 設定WiFi名稱 (ssid: service set identifier)
 psw = 'f28203416f'  # 設定WiFi密碼
 
 # ssid = '所使用的WiFi名稱'    # 設定WiFi名稱 (ssid: service set identifier)
@@ -65,7 +65,7 @@ def get_html(html_name):
     return html
 
 # 打開HTTP Web伺服器套接字socket
-addr = socket.getaddrinfo('192.168.71.137', 80)[0][-1] # 獲取IP地址和連接埠號
+addr = socket.getaddrinfo('192.168.137.98', 80)[0][-1] # 獲取IP地址和連接埠號
 s = socket.socket() # 建立socket對象
 s.bind(addr) # 繫結socket到IP地址和連接埠號
 # 開始監聽連接埠號，最多隻允許1個客戶端連接
