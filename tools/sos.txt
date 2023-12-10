@@ -1,0 +1,53 @@
+meet.Google.com
+https://meet.google.com/rgg-rywi-hbw
+
+
+VSCode DownLoad
+https://code.visualstudio.com/Download#
+
+
+Python Doc 
+https://docs.python.org/zh-tw/3/
+
+
+Python 教學
+https://docs.python.org/zh-tw/3/tutorial/index.html
+
+
+Python   
+http://pypi.org
+
+pip 套件 
+套件 PyInputPlus
+
+pip install PyInputPlus
+
+
+
+
+
+
+徐國堂 GitHub
+https://github.com/roberthsu2003/
+
+
+Flashing via UF2 bootloader
+Firmware 
+https://micropython.org/download/RPI_PICO/
+
+
+
+Thonny 
+https://thonny.org/
+
+Thonny Download (GitHub)
+https://github.com/thonny/thonny/releases
+
+
+
+https://pico.nxez.com/complete-experimental-kit-of-raspberry-pi-pico
+
+
+
+githut 同步
+git config --global --add pull.rebase true
