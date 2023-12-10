@@ -18,7 +18,11 @@ WIFI_PASSWORD = "f28203416f" #"-your-wifi-password-"
 WIFI_MAXWAIT = 10
 
 # Definition string in Posix Time Zone notation
-PTZ = "CET-1CEST,M3.5.0,M10.5.0/3"
+# PTZ = "CET-1CEST,M3.5.0,M10.5.0/8"
+
+# PTZ List
+# https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
+PTZ = "Asia/Taipei" # CET-1CEST,M3.5.0,M10.5.0/8"
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
