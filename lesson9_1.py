@@ -3,8 +3,7 @@ from machine                import Pin,PWM
 import time
  
 pwm = PWM(Pin(17))
- 
-pwm.freq(1000)
+ pwm.freq(1000)
  
 duty = 0
 direction = 1
