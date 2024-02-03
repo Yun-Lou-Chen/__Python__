@@ -13,6 +13,6 @@ st.markdown("## [**參考網頁**](http://bestdiy.ru/perevodim-nastennye-chasy-n
 st.markdown('---')
 st.markdown("![](http://bestdiy.ru/wp-content/uploads/2021/04/nastennye-chasy-ot-li-ion-akkumulyatora-na-3-7v-01.jpg")
 st.markdown(':-1: :+1: :100: :clock1030: ')
-st.markdown('[**Good idea**](https://www.youtube.com/watch?v=Mv5-garglY0){%youtube Mv5-garglY0 %}')
+st.markdown('[**Good idea**](https://www.youtube.com/watch?v=Mv5-garglY0)')
 
 
