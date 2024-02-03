@@ -1,18 +1,19 @@
 import streamlit as st
 import pandas as pd
+import requests
 
-# df = pd.DataFrame({
-# '第一欄':[1,2,3,4],
-# '第2欄':[10,20,30,40]
-# })
+st.title("Pico_W_職能發展協會專案")
+st.header("雞舍:red[溫度]和:blue[光線]狀態")
+st.divider()
 
+url = 'https://blynk.cloud/external/api/get?token=nzK-CMS_SCHp34fOZ46k_nwFqOEQu7Ws&v1&v2&v3&v4'
 
-
-st.title(':blue[第一欄]:red[第2欄]')
-st.markdown("## [**參考網頁**](http://bestdiy.ru/perevodim-nastennye-chasy-na-pitanie-ot-li-ion-akkumulyatora-na-3-7v.html)")
-st.markdown('---')
-st.markdown("![](http://bestdiy.ru/wp-content/uploads/2021/04/nastennye-chasy-ot-li-ion-akkumulyatora-na-3-7v-01.jpg")
-st.markdown(':-1: :+1: :100: :clock1030: ')
-st.markdown('[**Good idea**](https://www.youtube.com/watch?v=Mv5-garglY0)')
-
-
+response = requests.request("GET",url)
+if response.status_code == 200:
+    all_data = response.json()
+    st.info(f'Relay1:{all_data["v1"]}')
+    st.warning(f'Relay2:{all_data["v2"]}')
+    st.info(f'光線:{all_data["v3"]}')
+    st.warning(f'可變電阻:{all_data["v4"]}')
+else:
+    st.write("連線失敗,請等一下再試")
